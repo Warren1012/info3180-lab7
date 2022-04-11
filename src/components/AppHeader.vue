@@ -24,7 +24,7 @@
             </li>
 
             <li class="nav-item">
-              <RouterLink class="nav-link" to="/form">Form</RouterLink>
+              <RouterLink class="nav-link" to="/upload">Form</RouterLink>
             </li>
           </ul>
         </div>
