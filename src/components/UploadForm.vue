@@ -15,5 +15,27 @@
 </template>
 
 <script>
-    import UploadForm from app.forms
+    export default {
+    data() {
+        return {
+            message: "Form"
+        };
+    },
+    uploadPhoto()
+    {
+        fetch("/api/upload", {
+            method: 'POST'
+        })
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+         // display a success message
+        console.log(data);
+        })
+        .catch(function (error) {
+        console.log(error);
+        });
+    },
+}
 </script>
